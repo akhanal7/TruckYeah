@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="TruckYeah" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="R9j-pc-pZA">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.65000000000000002" contentMode="center" id="FGT-pF-fa3">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-overlay" translatesAutoresizingMaskIntoConstraints="NO" id="qze-YV-FzR">
+                        <rect key="frame" x="63" y="63" width="125" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qze-YV-FzR" secondAttribute="height" multiplier="1:1" id="yaW-DL-lJr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <gestureRecognizers/>
+                <constraints>
+                    <constraint firstItem="qze-YV-FzR" firstAttribute="centerX" secondItem="FGT-pF-fa3" secondAttribute="centerX" id="cyJ-QW-hhr"/>
+                    <constraint firstItem="qze-YV-FzR" firstAttribute="width" secondItem="FGT-pF-fa3" secondAttribute="width" multiplier="1/2" id="euo-iC-NtK"/>
+                    <constraint firstItem="qze-YV-FzR" firstAttribute="centerY" secondItem="FGT-pF-fa3" secondAttribute="centerY" id="sdh-x6-bUq"/>
+                </constraints>
+                <connections>
+                    <outletCollection property="gestureRecognizers" destination="ggX-Y1-EMg" appends="YES" id="e5j-be-OD0"/>
+                </connections>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="12" y="-74"/>
+        </visualEffectView>
+        <tapGestureRecognizer id="ggX-Y1-EMg">
+            <connections>
+                <action selector="pickProfilePicture:" destination="-1" id="Cqz-fy-pFf"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="camera-overlay" width="256" height="256"/>
+    </resources>
+</document>

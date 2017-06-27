@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01091AF91EA41A1000C4B4D1 /* FoodPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01091AF81EA41A1000C4B4D1 /* FoodPhotoCollectionViewController.swift */; };
+		010DE2721E4BB3E900914AD0 /* FoodMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010DE2711E4BB3E900914AD0 /* FoodMenu.swift */; };
+		01158BB21E8B44E200004D89 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01158BB11E8B44E200004D89 /* TimeInterval.swift */; };
+		0129E8161E3279BB002111DD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129E8151E3279BB002111DD /* RootViewController.swift */; };
+		0129E8181E327C47002111DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0129E8171E327C47002111DD /* Main.storyboard */; };
+		0129E81A1E327E15002111DD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0129E8191E327E15002111DD /* Login.storyboard */; };
+		0129E81D1E328487002111DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129E81C1E328487002111DD /* LoginViewController.swift */; };
+		0129E81F1E328610002111DD /* SegueIdentifier+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129E81E1E328610002111DD /* SegueIdentifier+Root.swift */; };
+		0165E8FC1E591B3300C98DA2 /* ProfilePictureOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0165E8FB1E591B3300C98DA2 /* ProfilePictureOverlay.xib */; };
+		016C19651E7B800D002DAA99 /* DayRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C19641E7B800D002DAA99 /* DayRange.swift */; };
+		016CB0191E510A0B0018BEB2 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016CB0181E510A0B0018BEB2 /* FirebaseAPI.swift */; };
+		0189E51D1E6E3B6A009216FB /* FoodMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0189E51C1E6E3B6A009216FB /* FoodMenu.storyboard */; };
+		0189E51F1E6E3E85009216FB /* FoodMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189E51E1E6E3E85009216FB /* FoodMenuDataSource.swift */; };
+		019B447C1E2723C100BC1C56 /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B447B1E2723C100BC1C56 /* SegueIdentifier.swift */; };
+		019B447E1E27273A00BC1C56 /* SegueIdentifier+AllTrucks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B447D1E27273A00BC1C56 /* SegueIdentifier+AllTrucks.swift */; };
+		01C0F2E21E4CF6B00095D14E /* HUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C0F2E11E4CF6B00095D14E /* HUDViewController.swift */; };
+		01D087F91EA1499D0096DA51 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D087F81EA1499D0096DA51 /* Review.swift */; };
+		01D087FB1EA14A1F0096DA51 /* ReviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D087FA1EA14A1F0096DA51 /* ReviewStore.swift */; };
+		01D087FF1EA1BFBE0096DA51 /* SnapshotDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D087FE1EA1BFBE0096DA51 /* SnapshotDecodable.swift */; };
+		01D088011EA3045B0096DA51 /* SnapshotEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D088001EA3045B0096DA51 /* SnapshotEncodable.swift */; };
+		01D088031EA396050096DA51 /* CreateReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D088021EA396050096DA51 /* CreateReviewViewController.swift */; };
+		01E6394A1E92C88C0024FDB5 /* ReviewsTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E639491E92C88C0024FDB5 /* ReviewsTableView.storyboard */; };
+		01E6394C1E92C8C70024FDB5 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6394B1E92C8C70024FDB5 /* ReviewsTableViewController.swift */; };
+		01E6394E1E92C8E20024FDB5 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6394D1E92C8E20024FDB5 /* ReviewCell.swift */; };
+		01F6EBE41E4CF24800128593 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6EBE11E4CF24800128593 /* FoodMenuViewController.swift */; };
+		30368B6A1DD3B3680098733C /* TrucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30368B691DD3B3680098733C /* TrucksViewController.swift */; };
+		3036C1531E119602006C207B /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036C1521E119602006C207B /* MenuOptionCell.swift */; };
+		305B7E691DD3B90800EC0185 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B7E681DD3B90800EC0185 /* Truck.swift */; };
+		305B7E6B1DD3B91000EC0185 /* TruckWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B7E6A1DD3B91000EC0185 /* TruckWebService.swift */; };
+		3064878A1DB5B88900E8813B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306487891DB5B88900E8813B /* AppDelegate.swift */; };
+		3064878F1DB5B88900E8813B /* AllTrucks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3064878D1DB5B88900E8813B /* AllTrucks.storyboard */; };
+		306487911DB5B88900E8813B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306487901DB5B88900E8813B /* Assets.xcassets */; };
+		3064879F1DB5B88900E8813B /* TruckYeahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064879E1DB5B88900E8813B /* TruckYeahTests.swift */; };
+		306487AA1DB5B88900E8813B /* TruckYeahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306487A91DB5B88900E8813B /* TruckYeahUITests.swift */; };
+		306801D81DD640290022D7B1 /* TruckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306801D71DD640290022D7B1 /* TruckCell.swift */; };
+		306D06201DB5CD0A0073156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 306D061F1DB5CD0A0073156B /* GoogleService-Info.plist */; };
+		306D06211DB5CD0A0073156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 306D061F1DB5CD0A0073156B /* GoogleService-Info.plist */; };
+		306D06221DB5CD0A0073156B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 306D061F1DB5CD0A0073156B /* GoogleService-Info.plist */; };
+		30BAC2601E11AB2400800B32 /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC25F1E11AB2400800B32 /* Profile.xib */; };
+		30BAC2621E11AB3B00800B32 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC2611E11AB3B00800B32 /* ProfileViewController.swift */; };
+		30C80BBA1E0E0C3D00E756E3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C80BB91E0E0C3D00E756E3 /* MenuViewController.swift */; };
+		6823B0644C78C4A65108D4F7 /* Pods_TruckYeah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E27AC5554AD8DE16AC6BD9 /* Pods_TruckYeah.framework */; };
+		702394091E5939420022D1AC /* FoodMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702394081E5939420022D1AC /* FoodMenuCell.swift */; };
+		75A5AA85F20D32267DD9DF2F /* Pods_TruckYeahTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F2E8DFAF802C350FE5F066 /* Pods_TruckYeahTests.framework */; };
+		93D0E90C4DFECF578E746C01 /* Pods_TruckYeahUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979A6CC302F7FA869FD266CA /* Pods_TruckYeahUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3064879B1DB5B88900E8813B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3064877E1DB5B88900E8813B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306487851DB5B88900E8813B;
+			remoteInfo = TruckYeah;
+		};
+		306487A61DB5B88900E8813B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3064877E1DB5B88900E8813B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306487851DB5B88900E8813B;
+			remoteInfo = TruckYeah;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01091AF81EA41A1000C4B4D1 /* FoodPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		010DE2711E4BB3E900914AD0 /* FoodMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenu.swift; sourceTree = "<group>"; };
+		01158BB11E8B44E200004D89 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		0129E8151E3279BB002111DD /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0129E8171E327C47002111DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0129E8191E327E15002111DD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0129E81C1E328487002111DD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0129E81E1E328610002111DD /* SegueIdentifier+Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegueIdentifier+Root.swift"; sourceTree = "<group>"; };
+		0165E8FB1E591B3300C98DA2 /* ProfilePictureOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePictureOverlay.xib; sourceTree = "<group>"; };
+		016C19641E7B800D002DAA99 /* DayRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayRange.swift; sourceTree = "<group>"; };
+		016CB0181E510A0B0018BEB2 /* FirebaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseAPI.swift; path = ../FirebaseAPI.swift; sourceTree = "<group>"; };
+		0189E51C1E6E3B6A009216FB /* FoodMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FoodMenu.storyboard; path = TruckYeah/FoodMenu.storyboard; sourceTree = "<group>"; };
+		0189E51E1E6E3E85009216FB /* FoodMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodMenuDataSource.swift; path = TruckYeah/FoodMenuDataSource.swift; sourceTree = "<group>"; };
+		019B447B1E2723C100BC1C56 /* SegueIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		019B447D1E27273A00BC1C56 /* SegueIdentifier+AllTrucks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegueIdentifier+AllTrucks.swift"; sourceTree = "<group>"; };
+		01C0F2E11E4CF6B00095D14E /* HUDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HUDViewController.swift; path = TruckYeah/HUDViewController.swift; sourceTree = "<group>"; };
+		01C7FAE41E5798D7009D680B /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		01D087F81EA1499D0096DA51 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		01D087FA1EA14A1F0096DA51 /* ReviewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewStore.swift; sourceTree = "<group>"; };
+		01D087FE1EA1BFBE0096DA51 /* SnapshotDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotDecodable.swift; sourceTree = "<group>"; };
+		01D088001EA3045B0096DA51 /* SnapshotEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotEncodable.swift; sourceTree = "<group>"; };
+		01D088021EA396050096DA51 /* CreateReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateReviewViewController.swift; sourceTree = "<group>"; };
+		01E639491E92C88C0024FDB5 /* ReviewsTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewsTableView.storyboard; sourceTree = "<group>"; };
+		01E6394B1E92C8C70024FDB5 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		01E6394D1E92C8E20024FDB5 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		01F6EBE11E4CF24800128593 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodMenuViewController.swift; path = TruckYeah/FoodMenuViewController.swift; sourceTree = "<group>"; };
+		30368B691DD3B3680098733C /* TrucksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksViewController.swift; sourceTree = "<group>"; };
+		3036C1521E119602006C207B /* MenuOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		305B7E681DD3B90800EC0185 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		305B7E6A1DD3B91000EC0185 /* TruckWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckWebService.swift; sourceTree = "<group>"; };
+		306487861DB5B88900E8813B /* TruckYeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruckYeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		306487891DB5B88900E8813B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3064878E1DB5B88900E8813B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AllTrucks.storyboard; sourceTree = "<group>"; };
+		306487901DB5B88900E8813B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		306487951DB5B88900E8813B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3064879A1DB5B88900E8813B /* TruckYeahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruckYeahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3064879E1DB5B88900E8813B /* TruckYeahTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckYeahTests.swift; sourceTree = "<group>"; };
+		306487A01DB5B88900E8813B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306487A51DB5B88900E8813B /* TruckYeahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruckYeahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		306487A91DB5B88900E8813B /* TruckYeahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckYeahUITests.swift; sourceTree = "<group>"; };
+		306487AB1DB5B88900E8813B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306801D71DD640290022D7B1 /* TruckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckCell.swift; sourceTree = "<group>"; };
+		306D061F1DB5CD0A0073156B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		306D06231DB680810073156B /* TruckYeah.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TruckYeah.entitlements; sourceTree = "<group>"; };
+		30BAC25F1E11AB2400800B32 /* Profile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
+		30BAC2611E11AB3B00800B32 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		30C80BB91E0E0C3D00E756E3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		30E27AC5554AD8DE16AC6BD9 /* Pods_TruckYeah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckYeah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F2E8DFAF802C350FE5F066 /* Pods_TruckYeahTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckYeahTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D48F2B92B2049A6D279106 /* Pods-TruckYeah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeah.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeah/Pods-TruckYeah.release.xcconfig"; sourceTree = "<group>"; };
+		48D89248A3936C556DEA60D4 /* Pods-TruckYeahUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeahUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeahUITests/Pods-TruckYeahUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D367D0B1530825132514CB2 /* Pods-TruckYeahUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeahUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeahUITests/Pods-TruckYeahUITests.release.xcconfig"; sourceTree = "<group>"; };
+		702394081E5939420022D1AC /* FoodMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodMenuCell.swift; path = TruckYeah/FoodMenuCell.swift; sourceTree = "<group>"; };
+		7B307331124FB324FC5739E4 /* Pods-TruckYeah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeah.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeah/Pods-TruckYeah.debug.xcconfig"; sourceTree = "<group>"; };
+		979A6CC302F7FA869FD266CA /* Pods_TruckYeahUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckYeahUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3535F180F0E800856348CD0 /* Pods-TruckYeahTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeahTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeahTests/Pods-TruckYeahTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F513A44FB9BF46D131919352 /* Pods-TruckYeahTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckYeahTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruckYeahTests/Pods-TruckYeahTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		306487831DB5B88900E8813B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823B0644C78C4A65108D4F7 /* Pods_TruckYeah.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487971DB5B88900E8813B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A5AA85F20D32267DD9DF2F /* Pods_TruckYeahTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487A21DB5B88900E8813B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D0E90C4DFECF578E746C01 /* Pods_TruckYeahUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010DE2731E4BB69600914AD0 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				305B7E6A1DD3B91000EC0185 /* TruckWebService.swift */,
+				016CB0181E510A0B0018BEB2 /* FirebaseAPI.swift */,
+				01D087FA1EA14A1F0096DA51 /* ReviewStore.swift */,
+			);
+			name = "Network Services";
+			sourceTree = "<group>";
+		};
+		0170C5061E3A9AA30079B4F4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0129E8191E327E15002111DD /* Login.storyboard */,
+				0129E81C1E328487002111DD /* LoginViewController.swift */,
+				0129E8151E3279BB002111DD /* RootViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0170C5071E3A9AB20079B4F4 /* All Trucks */ = {
+			isa = PBXGroup;
+			children = (
+				306801D71DD640290022D7B1 /* TruckCell.swift */,
+				30368B691DD3B3680098733C /* TrucksViewController.swift */,
+				3064878D1DB5B88900E8813B /* AllTrucks.storyboard */,
+			);
+			name = "All Trucks";
+			sourceTree = "<group>";
+		};
+		0170C5081E3A9ADD0079B4F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				016C19641E7B800D002DAA99 /* DayRange.swift */,
+				01D087F81EA1499D0096DA51 /* Review.swift */,
+				01158BB11E8B44E200004D89 /* TimeInterval.swift */,
+				305B7E681DD3B90800EC0185 /* Truck.swift */,
+				010DE2711E4BB3E900914AD0 /* FoodMenu.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0170C5091E3A9B0E0079B4F4 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC2611E11AB3B00800B32 /* ProfileViewController.swift */,
+				30BAC25F1E11AB2400800B32 /* Profile.xib */,
+				0165E8FB1E591B3300C98DA2 /* ProfilePictureOverlay.xib */,
+			);
+			name = "User Profile";
+			sourceTree = "<group>";
+		};
+		019B447A1E26EC1A00BC1C56 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				01C0F2E11E4CF6B00095D14E /* HUDViewController.swift */,
+				019B447B1E2723C100BC1C56 /* SegueIdentifier.swift */,
+				019B447D1E27273A00BC1C56 /* SegueIdentifier+AllTrucks.swift */,
+				0129E81E1E328610002111DD /* SegueIdentifier+Root.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		01B7B0331E6A4769008D0FD9 /* Truck Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0189E51C1E6E3B6A009216FB /* FoodMenu.storyboard */,
+				01091AF81EA41A1000C4B4D1 /* FoodPhotoCollectionViewController.swift */,
+				01F6EBE11E4CF24800128593 /* FoodMenuViewController.swift */,
+				01E639491E92C88C0024FDB5 /* ReviewsTableView.storyboard */,
+				01D088021EA396050096DA51 /* CreateReviewViewController.swift */,
+				01E6394B1E92C8C70024FDB5 /* ReviewsTableViewController.swift */,
+				01E6394D1E92C8E20024FDB5 /* ReviewCell.swift */,
+				0189E51E1E6E3E85009216FB /* FoodMenuDataSource.swift */,
+				702394081E5939420022D1AC /* FoodMenuCell.swift */,
+			);
+			name = "Truck Detail";
+			sourceTree = "<group>";
+		};
+		3064877D1DB5B88900E8813B = {
+			isa = PBXGroup;
+			children = (
+				01D088001EA3045B0096DA51 /* SnapshotEncodable.swift */,
+				01D087FE1EA1BFBE0096DA51 /* SnapshotDecodable.swift */,
+				01B7B0331E6A4769008D0FD9 /* Truck Detail */,
+				306487881DB5B88900E8813B /* TruckYeah */,
+				019B447A1E26EC1A00BC1C56 /* Utilities */,
+				3064879D1DB5B88900E8813B /* TruckYeahTests */,
+				306487871DB5B88900E8813B /* Products */,
+				306487A81DB5B88900E8813B /* TruckYeahUITests */,
+				C4D1C4AE23113A1E09F9FF9B /* Pods */,
+				9F55A75E17166C0DEDAF2CCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		306487871DB5B88900E8813B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				306487861DB5B88900E8813B /* TruckYeah.app */,
+				3064879A1DB5B88900E8813B /* TruckYeahTests.xctest */,
+				306487A51DB5B88900E8813B /* TruckYeahUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		306487881DB5B88900E8813B /* TruckYeah */ = {
+			isa = PBXGroup;
+			children = (
+				306D06231DB680810073156B /* TruckYeah.entitlements */,
+				306D061F1DB5CD0A0073156B /* GoogleService-Info.plist */,
+				306487891DB5B88900E8813B /* AppDelegate.swift */,
+				3036C1521E119602006C207B /* MenuOptionCell.swift */,
+				30C80BB91E0E0C3D00E756E3 /* MenuViewController.swift */,
+				0129E8171E327C47002111DD /* Main.storyboard */,
+				0170C5091E3A9B0E0079B4F4 /* User Profile */,
+				010DE2731E4BB69600914AD0 /* Network Services */,
+				0170C5081E3A9ADD0079B4F4 /* Model */,
+				0170C5071E3A9AB20079B4F4 /* All Trucks */,
+				0170C5061E3A9AA30079B4F4 /* Login */,
+				306487901DB5B88900E8813B /* Assets.xcassets */,
+				306487951DB5B88900E8813B /* Info.plist */,
+			);
+			path = TruckYeah;
+			sourceTree = "<group>";
+		};
+		3064879D1DB5B88900E8813B /* TruckYeahTests */ = {
+			isa = PBXGroup;
+			children = (
+				3064879E1DB5B88900E8813B /* TruckYeahTests.swift */,
+				306487A01DB5B88900E8813B /* Info.plist */,
+			);
+			path = TruckYeahTests;
+			sourceTree = "<group>";
+		};
+		306487A81DB5B88900E8813B /* TruckYeahUITests */ = {
+			isa = PBXGroup;
+			children = (
+				306487A91DB5B88900E8813B /* TruckYeahUITests.swift */,
+				306487AB1DB5B88900E8813B /* Info.plist */,
+			);
+			path = TruckYeahUITests;
+			sourceTree = "<group>";
+		};
+		9F55A75E17166C0DEDAF2CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C7FAE41E5798D7009D680B /* FirebaseStorage.framework */,
+				30E27AC5554AD8DE16AC6BD9 /* Pods_TruckYeah.framework */,
+				32F2E8DFAF802C350FE5F066 /* Pods_TruckYeahTests.framework */,
+				979A6CC302F7FA869FD266CA /* Pods_TruckYeahUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D1C4AE23113A1E09F9FF9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B307331124FB324FC5739E4 /* Pods-TruckYeah.debug.xcconfig */,
+				47D48F2B92B2049A6D279106 /* Pods-TruckYeah.release.xcconfig */,
+				D3535F180F0E800856348CD0 /* Pods-TruckYeahTests.debug.xcconfig */,
+				F513A44FB9BF46D131919352 /* Pods-TruckYeahTests.release.xcconfig */,
+				48D89248A3936C556DEA60D4 /* Pods-TruckYeahUITests.debug.xcconfig */,
+				4D367D0B1530825132514CB2 /* Pods-TruckYeahUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		306487851DB5B88900E8813B /* TruckYeah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306487AE1DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeah" */;
+			buildPhases = (
+				257F9F979989CE4C718F1D90 /* [CP] Check Pods Manifest.lock */,
+				306487821DB5B88900E8813B /* Sources */,
+				306487831DB5B88900E8813B /* Frameworks */,
+				306487841DB5B88900E8813B /* Resources */,
+				24477F69A63780C651F0092B /* [CP] Embed Pods Frameworks */,
+				425BDFA7E1791B93D577A177 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruckYeah;
+			productName = TruckYeah;
+			productReference = 306487861DB5B88900E8813B /* TruckYeah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		306487991DB5B88900E8813B /* TruckYeahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306487B11DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeahTests" */;
+			buildPhases = (
+				88B94E5378AF5ED63FABDEF9 /* [CP] Check Pods Manifest.lock */,
+				306487961DB5B88900E8813B /* Sources */,
+				306487971DB5B88900E8813B /* Frameworks */,
+				306487981DB5B88900E8813B /* Resources */,
+				7DDADF4BCCC5D6D9FCAF24DD /* [CP] Embed Pods Frameworks */,
+				8DA67D20EFF57B5C0E665C7B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3064879C1DB5B88900E8813B /* PBXTargetDependency */,
+			);
+			name = TruckYeahTests;
+			productName = TruckYeahTests;
+			productReference = 3064879A1DB5B88900E8813B /* TruckYeahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		306487A41DB5B88900E8813B /* TruckYeahUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306487B41DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeahUITests" */;
+			buildPhases = (
+				48C520758B036CEC8B5196B5 /* [CP] Check Pods Manifest.lock */,
+				306487A11DB5B88900E8813B /* Sources */,
+				306487A21DB5B88900E8813B /* Frameworks */,
+				306487A31DB5B88900E8813B /* Resources */,
+				B07A1B42A1629C41F5BC2606 /* [CP] Copy Pods Resources */,
+				0A75F2B31F91CAE9089D0865 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306487A71DB5B88900E8813B /* PBXTargetDependency */,
+			);
+			name = TruckYeahUITests;
+			productName = TruckYeahUITests;
+			productReference = 306487A51DB5B88900E8813B /* TruckYeahUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3064877E1DB5B88900E8813B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ChooChoo Computing";
+				TargetAttributes = {
+					306487851DB5B88900E8813B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PJHPF8GAZG;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					306487991DB5B88900E8813B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 306487851DB5B88900E8813B;
+					};
+					306487A41DB5B88900E8813B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 306487851DB5B88900E8813B;
+					};
+				};
+			};
+			buildConfigurationList = 306487811DB5B88900E8813B /* Build configuration list for PBXProject "TruckYeah" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3064877D1DB5B88900E8813B;
+			productRefGroup = 306487871DB5B88900E8813B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				306487851DB5B88900E8813B /* TruckYeah */,
+				306487991DB5B88900E8813B /* TruckYeahTests */,
+				306487A41DB5B88900E8813B /* TruckYeahUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		306487841DB5B88900E8813B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0129E8181E327C47002111DD /* Main.storyboard in Resources */,
+				306D06201DB5CD0A0073156B /* GoogleService-Info.plist in Resources */,
+				0129E81A1E327E15002111DD /* Login.storyboard in Resources */,
+				01E6394A1E92C88C0024FDB5 /* ReviewsTableView.storyboard in Resources */,
+				0189E51D1E6E3B6A009216FB /* FoodMenu.storyboard in Resources */,
+				30BAC2601E11AB2400800B32 /* Profile.xib in Resources */,
+				306487911DB5B88900E8813B /* Assets.xcassets in Resources */,
+				0165E8FC1E591B3300C98DA2 /* ProfilePictureOverlay.xib in Resources */,
+				3064878F1DB5B88900E8813B /* AllTrucks.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487981DB5B88900E8813B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306D06211DB5CD0A0073156B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487A31DB5B88900E8813B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306D06221DB5CD0A0073156B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A75F2B31F91CAE9089D0865 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeahUITests/Pods-TruckYeahUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24477F69A63780C651F0092B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeah/Pods-TruckYeah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		257F9F979989CE4C718F1D90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		425BDFA7E1791B93D577A177 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeah/Pods-TruckYeah-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C520758B036CEC8B5196B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDADF4BCCC5D6D9FCAF24DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeahTests/Pods-TruckYeahTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88B94E5378AF5ED63FABDEF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA67D20EFF57B5C0E665C7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeahTests/Pods-TruckYeahTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B07A1B42A1629C41F5BC2606 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckYeahUITests/Pods-TruckYeahUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		306487821DB5B88900E8813B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0129E81D1E328487002111DD /* LoginViewController.swift in Sources */,
+				019B447E1E27273A00BC1C56 /* SegueIdentifier+AllTrucks.swift in Sources */,
+				0189E51F1E6E3E85009216FB /* FoodMenuDataSource.swift in Sources */,
+				702394091E5939420022D1AC /* FoodMenuCell.swift in Sources */,
+				01091AF91EA41A1000C4B4D1 /* FoodPhotoCollectionViewController.swift in Sources */,
+				01D088031EA396050096DA51 /* CreateReviewViewController.swift in Sources */,
+				01E6394C1E92C8C70024FDB5 /* ReviewsTableViewController.swift in Sources */,
+				01C0F2E21E4CF6B00095D14E /* HUDViewController.swift in Sources */,
+				01D088011EA3045B0096DA51 /* SnapshotEncodable.swift in Sources */,
+				01D087FB1EA14A1F0096DA51 /* ReviewStore.swift in Sources */,
+				305B7E6B1DD3B91000EC0185 /* TruckWebService.swift in Sources */,
+				30368B6A1DD3B3680098733C /* TrucksViewController.swift in Sources */,
+				01158BB21E8B44E200004D89 /* TimeInterval.swift in Sources */,
+				0129E8161E3279BB002111DD /* RootViewController.swift in Sources */,
+				30C80BBA1E0E0C3D00E756E3 /* MenuViewController.swift in Sources */,
+				016C19651E7B800D002DAA99 /* DayRange.swift in Sources */,
+				306801D81DD640290022D7B1 /* TruckCell.swift in Sources */,
+				01F6EBE41E4CF24800128593 /* FoodMenuViewController.swift in Sources */,
+				01D087FF1EA1BFBE0096DA51 /* SnapshotDecodable.swift in Sources */,
+				3036C1531E119602006C207B /* MenuOptionCell.swift in Sources */,
+				3064878A1DB5B88900E8813B /* AppDelegate.swift in Sources */,
+				016CB0191E510A0B0018BEB2 /* FirebaseAPI.swift in Sources */,
+				01D087F91EA1499D0096DA51 /* Review.swift in Sources */,
+				305B7E691DD3B90800EC0185 /* Truck.swift in Sources */,
+				010DE2721E4BB3E900914AD0 /* FoodMenu.swift in Sources */,
+				0129E81F1E328610002111DD /* SegueIdentifier+Root.swift in Sources */,
+				01E6394E1E92C8E20024FDB5 /* ReviewCell.swift in Sources */,
+				019B447C1E2723C100BC1C56 /* SegueIdentifier.swift in Sources */,
+				30BAC2621E11AB3B00800B32 /* ProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487961DB5B88900E8813B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3064879F1DB5B88900E8813B /* TruckYeahTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306487A11DB5B88900E8813B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306487AA1DB5B88900E8813B /* TruckYeahUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3064879C1DB5B88900E8813B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306487851DB5B88900E8813B /* TruckYeah */;
+			targetProxy = 3064879B1DB5B88900E8813B /* PBXContainerItemProxy */;
+		};
+		306487A71DB5B88900E8813B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306487851DB5B88900E8813B /* TruckYeah */;
+			targetProxy = 306487A61DB5B88900E8813B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3064878D1DB5B88900E8813B /* AllTrucks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3064878E1DB5B88900E8813B /* Base */,
+			);
+			name = AllTrucks.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		306487AC1DB5B88900E8813B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		306487AD1DB5B88900E8813B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306487AF1DB5B88900E8813B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B307331124FB324FC5739E4 /* Pods-TruckYeah.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TruckYeah/TruckYeah.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PJHPF8GAZG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseStorage/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = TruckYeah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truckyeah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		306487B01DB5B88900E8813B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D48F2B92B2049A6D279106 /* Pods-TruckYeah.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TruckYeah/TruckYeah.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PJHPF8GAZG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseStorage/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = TruckYeah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truckyeah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		306487B21DB5B88900E8813B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3535F180F0E800856348CD0 /* Pods-TruckYeahTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TruckYeahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.TruckYeahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruckYeah.app/TruckYeah";
+			};
+			name = Debug;
+		};
+		306487B31DB5B88900E8813B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F513A44FB9BF46D131919352 /* Pods-TruckYeahTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TruckYeahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.TruckYeahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruckYeah.app/TruckYeah";
+			};
+			name = Release;
+		};
+		306487B51DB5B88900E8813B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D89248A3936C556DEA60D4 /* Pods-TruckYeahUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TruckYeahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.TruckYeahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TruckYeah;
+			};
+			name = Debug;
+		};
+		306487B61DB5B88900E8813B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D367D0B1530825132514CB2 /* Pods-TruckYeahUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TruckYeahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccc.TruckYeahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TruckYeah;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		306487811DB5B88900E8813B /* Build configuration list for PBXProject "TruckYeah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306487AC1DB5B88900E8813B /* Debug */,
+				306487AD1DB5B88900E8813B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306487AE1DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306487AF1DB5B88900E8813B /* Debug */,
+				306487B01DB5B88900E8813B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306487B11DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306487B21DB5B88900E8813B /* Debug */,
+				306487B31DB5B88900E8813B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306487B41DB5B88900E8813B /* Build configuration list for PBXNativeTarget "TruckYeahUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306487B51DB5B88900E8813B /* Debug */,
+				306487B61DB5B88900E8813B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3064877E1DB5B88900E8813B /* Project object */;
+}

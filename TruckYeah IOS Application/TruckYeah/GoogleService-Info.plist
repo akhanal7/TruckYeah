@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>919085270898-j0v20dtakdn2c09lhs3hvp289fq66ipj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.919085270898-j0v20dtakdn2c09lhs3hvp289fq66ipj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZi3AsVnjDY4W9nKXJEXwRYrkaz8__RqA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>919085270898</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.truckyeah</string>
+	<key>PROJECT_ID</key>
+	<string>truckyeah-3d80f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>truckyeah-3d80f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:919085270898:ios:c0c35333eb6c7cbc</string>
+	<key>DATABASE_URL</key>
+	<string>https://truckyeah-3d80f.firebaseio.com</string>
+</dict>
+</plist>

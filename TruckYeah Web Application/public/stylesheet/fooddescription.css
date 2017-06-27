@@ -1,0 +1,163 @@
+html, body {
+	height: 100% !important;
+}
+
+.header-image {
+	top: 60px;
+}
+
+.image{
+	height: 300px;
+	position: fixed;
+    width: 100%;
+	object-fit: cover;
+}
+
+.headerbanner{
+	z-index: 3;
+	position: relative;
+}
+
+.overlay {
+	z-index: 4;
+    position: fixed;
+	width: 100%;
+	height: 400px;
+    top:70px;
+    background:rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.foodtruckname, .header-image {
+	width: 100%;
+  	height: 100%;
+  	position: absolute;
+}
+
+.foodtruckname {
+	z-index: 5;
+	position: fixed;
+	top: 100px;
+}
+
+.header-heading {
+	margin: 0px auto 10px 100px;
+    font-size: 80px;
+    font-weight: 1000;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2cm;
+    clear: both;
+}
+
+.edit{
+	margin: 0px auto 10px 100px;
+	text-decoration: none !important;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.delete  {
+	text-decoration: none !important;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.edit:hover, .delete:hover {
+	color: #0DDFF0;
+    transition: ease-in all 300ms;
+    -moz-transition: ease-in all 300ms;
+    -webkit-transition: ease-in all 300ms;
+    -o-transition: ease-in all 300ms;
+}
+
+#container {
+	top: 350px;
+	position: relative;
+	min-height: 200px;
+	height: auto;
+	width: 100% !important;
+	background: white;
+	z-index: 10;
+}
+
+.bar {
+	width: 280px;
+	height: 2px;
+	background-color: rgba(45, 45, 45, 0.15);
+}
+
+.desc {
+	font-size: 18px;
+	margin-bottom: 100px;
+
+}
+
+.menudesc1 {
+	font-size: 18px;
+	margin-bottom: 100px;
+}
+
+.menu-item{
+	display: inline-block;
+}
+
+.headline h4 {
+    display: inline-block;
+	line-height: 30px;
+}
+
+.price {
+	float: right;
+}
+
+.jpt {
+	margin: 0px auto 100px auto;
+}
+
+footer {
+	background-color: #222;
+	width: 100%;
+	padding: 20px 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 300px;
+}
+
+.wrapper {
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.footerbar{
+	width: 400px;
+	color: black;
+	height: 1px;
+	background-color: rgba(45, 45, 45, 0.15);
+	letter-spacing: 0.2cm;
+
+}
+
+.fa-twitter, .fa-facebook, .fa-instagram {
+    color: white;
+	padding: 0 10px;
+}
+
+.fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover {
+    color: rgba(231, 76, 60, 0.7);
+    transition: ease-in all 400ms;
+    -moz-transition: ease-in all 400ms;
+    -webkit-transition: ease-in all 400ms;
+    -o-transition: ease-in all 400ms;
+}
+
+.copy {
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}

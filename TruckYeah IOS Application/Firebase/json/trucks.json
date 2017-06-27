@@ -1,0 +1,20 @@
+{
+  "trucks": [
+    {
+      "name": "Bento Bus",
+      "image": "bento.jpg"
+    },
+    {
+      "name": "Fry Guy",
+      "image": "fryguy.jpg"
+    },
+    {
+      "name": "Nana G's",
+      "image": "nana.jpg"
+    },
+    {
+      "name": "Buzz!",
+      "image": "buzz.jpg"
+    }
+  ]
+}

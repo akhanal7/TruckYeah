@@ -1,0 +1,62 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+}
+form{
+    width: 40%;
+    padding: 30px;
+    font-family: "Trebuchet MS";
+    color: white;
+    /*border: 1px solid #cbcbcb;*/
+    margin: 5px auto;
+}
+.textField{
+    margin-top: 2px;
+    height: 28px;
+    border: 1px solid #5E6E66;
+    font-size: 16px;
+    padding: 1px;
+    width: 100%;
+}
+#error_msg{
+    width: 50%;
+    margin: 5px auto;
+    height: 30px;
+    border: 1px solid #FF0000;
+    background: #FFB9B8;
+    color: #FF0000;
+    text-align: center;
+    padding-top: 10px;
+}
+#logout{
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0px;
+    position: fixed;
+    /*left: 30px;*/
+    border: 3px solid black;
+    bottom: 0;
+    right: 0;
+}
+#user{
+    text-align: left;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+td{
+    text-align: right;
+}

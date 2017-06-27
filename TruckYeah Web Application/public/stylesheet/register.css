@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0 auto;
+	background-size: cover;
+}
+
+.form-login {
+  max-width: 40`0px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.overlay{
+	position: fixed;
+    height: 100%;
+    width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#container {
+	background-color: #383838;
+	width: 40%;
+	min-height: 60%;
+	height: auto;
+	margin-top: 120px;
+	padding: 20px;
+	border-radius: 20px;
+}

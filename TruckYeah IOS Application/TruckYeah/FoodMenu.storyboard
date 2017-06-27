@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="drA-5l-SRK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pictures-->
+        <scene sceneID="hj5-oK-Kdd">
+            <objects>
+                <collectionViewController title="Pictures" automaticallyAdjustsScrollViewInsets="NO" id="Yp3-Na-UJ8" customClass="FoodPhotoCollectionViewController" customModule="TruckYeah" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="oJA-ff-H2y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Ufi-yL-AD4">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodPhotoCell" id="Tc6-TT-srH">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.48004066779999999" colorSpace="calibratedRGB"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Yp3-Na-UJ8" id="V5R-R6-bsn"/>
+                            <outlet property="delegate" destination="Yp3-Na-UJ8" id="Gk6-9R-cTh"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Pictures" image="SLR Camera Filled-60" id="4ab-mK-GX9"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PwN-RF-r9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="-794"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="wgr-u7-dh9">
+            <objects>
+                <viewController title="Menu" automaticallyAdjustsScrollViewInsets="NO" id="hii-as-P3o" customClass="FoodMenuViewController" customModule="TruckYeah" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Hy-j8-5Vr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Km5-Sh-1ZO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfN-aL-K7M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-cY-pAS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="DKN-Rj-oKS">
+                                    <size key="itemSize" width="160" height="60"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodMenuCell" id="Qbs-KA-P8q" customClass="FoodMenuCell" customModule="TruckYeah" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="2" width="160" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkN-QG-q2y">
+                                                    <rect key="frame" x="108.5" y="31" width="39.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB8-Dd-GCe">
+                                                    <rect key="frame" x="5" y="0.0" width="144" height="33.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="hB8-Dd-GCe" secondAttribute="trailing" constant="3" id="Pgo-q4-Z6a"/>
+                                            <constraint firstItem="gkN-QG-q2y" firstAttribute="top" secondItem="hB8-Dd-GCe" secondAttribute="bottom" constant="-2.5" id="XFB-Kk-ZVG"/>
+                                            <constraint firstAttribute="leadingMargin" secondItem="hB8-Dd-GCe" secondAttribute="leading" constant="3" id="l6j-0c-nfH"/>
+                                            <constraint firstItem="hB8-Dd-GCe" firstAttribute="centerY" secondItem="Qbs-KA-P8q" secondAttribute="centerY" constant="-13.25" id="odv-FG-HZK"/>
+                                            <constraint firstItem="gkN-QG-q2y" firstAttribute="trailing" secondItem="hB8-Dd-GCe" secondAttribute="trailing" constant="-1" id="pa9-HK-3Yv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemName" destination="hB8-Dd-GCe" id="WLD-JO-DRH"/>
+                                            <outlet property="itemPrice" destination="gkN-QG-q2y" id="mGQ-O4-QhA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w9w-cY-pAS" firstAttribute="leading" secondItem="bfN-aL-K7M" secondAttribute="leading" id="0oM-RG-x1I"/>
+                            <constraint firstItem="Km5-Sh-1ZO" firstAttribute="top" secondItem="w9w-cY-pAS" secondAttribute="bottom" id="9Jx-6h-Dfr"/>
+                            <constraint firstAttribute="trailing" secondItem="w9w-cY-pAS" secondAttribute="trailing" id="khI-b2-TbD"/>
+                            <constraint firstItem="w9w-cY-pAS" firstAttribute="top" secondItem="4Hy-j8-5Vr" secondAttribute="bottom" id="nHW-s4-qNV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Menu" image="Vegetarian Food Filled-60" id="48Y-XA-WAd"/>
+                    <navigationItem key="navigationItem" id="Eye-iH-0Nz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="w9w-cY-pAS" id="ar6-nC-BCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dS-IX-V5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="34.632683658170919"/>
+        </scene>
+        <!--ReviewsTableView-->
+        <scene sceneID="Euy-oS-umo">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ReviewsID" storyboardName="ReviewsTableView" id="cLt-we-n2V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dPm-nr-rcW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOv-5A-j6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="726"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zHu-Wo-2cd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="drA-5l-SRK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="l5E-z1-DYP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hii-as-P3o" kind="relationship" relationship="viewControllers" id="6RK-4o-3bu"/>
+                        <segue destination="cLt-we-n2V" kind="relationship" relationship="viewControllers" id="pG1-kf-HfO"/>
+                        <segue destination="Yp3-Na-UJ8" kind="relationship" relationship="viewControllers" id="bj3-Fu-iI1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDM-NY-ago" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SLR Camera Filled-60" width="30" height="30"/>
+        <image name="Vegetarian Food Filled-60" width="30" height="30"/>
+    </resources>
+</document>
