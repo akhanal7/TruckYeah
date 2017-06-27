@@ -3,6 +3,6 @@
 **Authors**
 
     Alexis Coulter
-	  Connor Creech
+    Connor Creech
     Ankit Khanal
     Nick Teissler
