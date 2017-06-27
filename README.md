@@ -1,8 +1,7 @@
 # TruckYeah Junior Design Project
 
 **Authors**
-
-    Alexis Coulter
+    Alexis Coulter 
     Connor Creech
     Ankit Khanal
     Nick Teissler
