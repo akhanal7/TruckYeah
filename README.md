@@ -1,4 +1,4 @@
-# TruckYeah Junior Design Project
+# TruckYeah! Junior Design Project
 
 **Authors**
 
